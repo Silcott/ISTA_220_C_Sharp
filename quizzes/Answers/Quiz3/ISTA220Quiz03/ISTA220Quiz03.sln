@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA220Quiz03", "ISTA220Quiz03.csproj", "{7EBA8865-73D7-45AC-AD36-F78FE2D9702B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EBA8865-73D7-45AC-AD36-F78FE2D9702B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBA8865-73D7-45AC-AD36-F78FE2D9702B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBA8865-73D7-45AC-AD36-F78FE2D9702B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBA8865-73D7-45AC-AD36-F78FE2D9702B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {128B63DB-A2FF-4A59-9E35-0D95CA004E57}
+	EndGlobalSection
+EndGlobal
