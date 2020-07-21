@@ -1,0 +1,159 @@
+-- Name: James Silcott
+-- Homework: ISTA220-04
+-- Date: July 13, 2020
+
+Chapter 4:
+1. What are all possible values of Boolean expression?
+True
+False (default value)
+null
+
+
+2. List the equality operators. List the relational operators. List the logical 
+operators. How are they the same? How are they dierent?
+Operator Name					Examples
+<	Less than				x<5 	(returns true) compares the left hand side and right hand side
+>	Greater than				x>5 	(returns false) logical operator
+<=	Less than equal to			x<=2 	(returns true)
+>=	Greater than equal to			x>=2 	(returns true)
+==	Equal equal to				x==2 	(returns true)
+!=	Not equal to				x!=2 	(returns false)
+NOT	Reverses it 							Logical operator
+
+
+3. What is the general concept of short circuiting? This question has a short 
+and simple answer and you do not need to have a detailed response.
+Short circuiting is something that will happen when your program is running and it hits a conditional. 
+A short circuit in logic is when you know for sure that an entire complex conditional is either true or 
+false before you evaluate the whole thing
+
+looks at the lefthand operator and if it is a $$ and its false then it doenst look at the righhand side
+
+No Short Circuiting:
+True and True (returns true)
+True and (int a = 4) (returns true AND assign 4 to a)
+True and False (returns false)
+False and True (returns false)
+
+With Short Circuiting
+Only looks at the first operand and if its false then it returns false
+False and (int a = 4) (returns false and nothing else)
+
+======================================================================
+
+if left hand side is True, it returns true regardless of the value of the right hand side
+
+False and ? 
+True and ?
+True or ?
+False or ? 
+ 
+Short-circuiting - OR (||) boolean operator
+The OR - || boolean operator when applied returns true when any one 
+of the two operand (or boolean expression) or both operand evaluates to true . 
+If both operand evaluates to false , it will return false 
+
+
+
+4. What are the dierence in how short circuiting works for && and ||?
+C# can short-circuit true/false conditions that use the && or || logical operator. 
+This way ... Based on how the logical OR ( || ) operator works, one of these two ... 
+For most if statements that doesn't make for a notable difference.
+
+
+
+5. Look at the list of operators. What operator has the highest precedence? paranthesesis
+Which has the lowest? assignment operator
+
+
+
+6. In an if or else construction using multiple lines of code, what eect 
+does the use of curly braces have?
+Now consider we have an if condition when true multiple statements will get executed. 
+If we use curly braces all statement within curly braces will get executed when "if" condition satisfies.
+
+
+
+7. In a switch statement, what happens if you omit break?
+Without break, the program continues to the next labeled statement, 
+executing the statements until a break or the end of the statement is reached. 
+This continuation may be desirable in some situations.
+
+
+
+8. The four keywords in a switch statement are switch, case, break, and default. 
+Explain what each keyword does.
+
+-switch statement causes control to transfer to one labeled-statement in its 
+statement body, depending on the value of expression.
+*specifys a pattern to match
+
+-case statement whose constant-expression value matches the value of expression. 
+
+-break statement transfers control out of the body.
+
+-default statement is executed if no case constant-expression value is equal 
+to the value of expression. If there's no default statement, and no case match is 
+found, none of the statements in the switch body get executed. 
+
+*if a variable doesn't have a value it can't be used
+
+
+
+9. Look at the source listing below. 
+It contains two methods: recurr1() and 
+recurr2(). There is a signicant dierence between the two methods. What is it?
+
+
+
+
+10. (Not in book) What is a recursive method? Using a language you know 
+(such as English), write a recursive method that adds up the integers in a list 
+of integers. The input to the method is a list of integers and the output is a 
+scalar value representing a sum.
+
+A Method can call another methods but it can also call itself. 
+When a mathod calls itself, it'll be named recursive method. ... 
+Recursive method has parameter(s) and calls itself with new parameter values.
+
+six pack of beer: drink one and see if any are left
+
+public int AddDigits(int num) {
+    if(num > 9)
+    {
+        num = (num%10) + (num/10);
+        return AddDigits(num);
+    }
+    else{
+        return num;
+    }
+}
+
+
+
+11. (Not in book) Read a short summary of De Morgan's laws.
+
+(a) Explain how this statement, "It's not snowing or raining," 
+is the same as this statement, "It's not snowing and it's not raining."
+
+“It will not snow or rain” means “It will not snow and it will
+not rain.”
+If S is event that it snows, R is event that it rains, then
+(S ∪ R)c = Sc ∩ Rc
+More generally: (∪n Ei)c = ∩n (Ei)c i=1 i=1
+“It will not both snow and rain” means “Either it will not
+snow or it will not rain.”
+(S ∩ R)c = Sc ∪ Rc
+(∩n Ei)c = ∪n (Ei)
+
+
+
+(b) Explain how this statement, "I'm not running and walking," 
+is the same as this statement, "I'm not running or I'm not walking."
+
+"You will not run or walk” means “You will not run and you will
+not walk.”
+
+More generally: 
+“You will not both run and walk” means “Either you will not
+run or it will not walk.”

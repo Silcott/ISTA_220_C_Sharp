@@ -1,0 +1,188 @@
+-- Name: James Silcott
+-- Homework: ISTA220-03
+-- Date: July 12, 2020
+
+Chapter 3:
+*variable a named location in memory
+*method is a named block (squence of code statements) of code
+*" { " Allocates and save the stack and " } " wipes out and reloads the previous stack 
+
+1. What is a method?
+A method is a named sequence of statements. 
+
+
+2. (Not in book) What is the dierence between a function and a procedure/subprocedure/subroutine?
+Functions returning values after processing are called Functions and 
+functions returning no value are called Sub Procedures. 
+The Sub procedure performs a task and then returns control to the calling code, 
+but it does not return a value to the calling code.
+
+
+3. What does a return statement do?
+The return statement is usually positioned at the end of the method because it causes the method to 
+finish, and control returns to the statement that called the method
+
+
+
+4. What is an expression bodied method?
+An expression-bodied method consists of a single expression that returns a value whose type matches 
+the method's return type, or, for methods that return void , that performs some operation. ... It 
+also defines a DisplayName method that displays a name to the console.
+
+
+
+5. What is the scope of a variable?
+The part of the program where a particular variable is accessible is termed as the Scope of that variable. 
+
+Class Level Scope
+Method Level Scope
+Block Level Scope
+
+6. What is an overloaded method?
+Overloading happens when you have two methods with the same name but different signatures (or arguments). 
+In a class we can implement two or more methods with the same name. Overloaded methods are differentiated 
+based on the number and type of parameter passed as arguments to the methods
+
+
+
+7. How do you call a method thatBy using the params keyword to indicate that a parameter is a parameter 
+array, you allow your method to be called with a variable number of arguments. The parameter tagged with 
+the params keyword must be an array type, and it must be the last parameter in the method's parameter 
+list. requires arguments?
+
+
+
+
+8. How do you write a method, that is, specify the method denition, that requires a parameter list?
+Methods are declared in a class or struct by specifying: ... 
+Invoking an instance method requires that you instantiate an object ... 
+The method definition specifies the names and types of any parameters
+
+
+
+9. How do you specify a parameter as optional when defining a method?
+assigning an actual value to the parameter inside the methodstatic 
+
+public void scholar(string fname,  
+                    string lname, 
+                    int age = 20, 
+         	    string branch = "Computer science")
+
+
+
+10. How do you pass a argument to a method as a named parameter?
+The syntax of parameter names is (parametername: value)
+AddNumber(firstNumber: 123, secondNumber: 64); 
+
+
+
+11. How do you return values from a method? Can you return multiple values from a method, and if so,
+how?
+Methods can return a value to the caller. If the return type, the type listed before the method name, 
+is not void, the method can return the value by using the return keyword. A statement with the return 
+keyword followed by a value that matches the return type will return that value to the method caller.
+C# 7 has a new feature that lets you return more than one value from a method thanks to tuple types and tuple literals.
+
+Take the following function for instance:
+
+(string, string, string) MyCoolFunction() // tuple return type
+{   
+    //...        
+    return (firstValue, secondValue, thirdValue);
+}
+
+
+12. What is a tuple? How do you define a method that returns multiple values? Give an example of a
+method that returns multiple values other than the example in the book.
+
+The word Tuple means “a data structure which consists of the multiple parts”. So tuple is a data 
+structure which gives you the easiest way to represent a data set which has multiple values that 
+may/may not be related to each other. It introduced in .NET Framework 4.0. In tuple, you can add 
+elements from 1 to 8. If you try to add elements greater than eight, then the compiler will throw 
+an error. Tuples are generally used when you want to create a data structure which contains objects 
+with their properties and you don’t want to create a separate type for that.
+
+Features of Tuples:
+
+It allows us to represent multiple data into a single data set.
+It allows us to create, manipulate, and access data set.
+It return multiple values from a method without using out parameter.
+It can also store duplicate elements.
+It allows us to pass multiple values to a method with the help of single parameters.
+
+
+// C# program to create tuple  
+// using Create Method 
+using System; 
+  
+public class GFG { 
+  
+    // Main method 
+    static public void Main() 
+    { 
+  
+        // Creating 1-tuple 
+        // Using Create Method 
+        var My_Tuple1 = Tuple.Create("GeeksforGeeks"); 
+  
+        // Creating 4-tuple 
+        // Using Create Method 
+        var My_Tuple2 = Tuple.Create(12, 30, 40, 50); 
+  
+        // Creating 8-tuple 
+        // Using Create Method 
+        var My_Tuple3 = Tuple.Create(13, "Geeks", 67,  
+                      89.90, 'g', 39939, "geek", 10); 
+    } 
+} 
+
+
+13. Examine the method defnition on page 83 of the book. Desk check the execution of this method.
+What do you discover? This is called recursion.
+	1 long factorial (int dataValue)
+	2 {
+	3 if (dataValue == 1)
+	4 return 1;	
+	5 else
+	6 return dataValue * factorial (dataValue - 1);
+	7 }
+ A recursive function is a function that calls itself.
+So by the following code the first time we pass the number 4 and it will check, if the condition 
+is zero then come to the next number 4 to multiply the number (4-1) when the function is called. 
+So we are parsing a different value for this parameter 4*3 and the function calls itself again, 
+then for 4*3*2 the function calls itself again and then it checks whether that number is equal to 
+zero and if it is then it breaks the recursion and control is returned to whoever called the function.
+
+*do one thing and 
+*check to see if you are finsished
+*if not call it again witha  changed value
+
+
+14. How does the compiler resolve an ambiguity between named arguments and optional parameters?
+By deﬁning overloaded methods, you can implement different versions of a
+ method that take different parameters. When you build an application that uses overloaded methods,
+ the compiler determines which speciﬁ c instances of each method it should use to satisfy each method 
+call. This is a common feature of many object-oriented languages, not just C#.
+
+
+
+
+15. The book states: \A key feature of C# and other languages designed for the .NET Framework is the
+ability to interoperate with applications and components written with other technologies." What is
+the COM and how is the CLR dependent on the COM?
+
+One of the principal technologies that underpins many Windows applications and ser-vices running outside
+ the .NET Framework is the Component Object Model (COM). In fact, the common language runtime 
+(CLR) used by the .NET Framework is also heavily dependent on COM, as is the Windows Runtime of 
+Windows 10. COM does not support overloaded methods; instead, it uses meth-ods that can take optional 
+parameters. To make it easier to incorporate COM libraries and components into a C# solution, C# also 
+supports optional parameters.
+
+
+
+
+
+
+
+
+

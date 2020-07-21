@@ -1,0 +1,445 @@
+-- Name: James Silcott
+-- Lab: ISTA220-3A
+-- Date: July 13, 2020
+
+
+Write a while statement
+
+
+1. Using Microsoft Visual Studio 2017, 
+open the WhileStatement solution, which is located in the
+\Microsoft Press\VCSBS\Chapter 5\WhileStatement folder in 
+your Documents folder.
+
+
+2. On the Debug menu, click Start Debugging.
+Visual Studio 2017 builds and runs the application. The application 
+is a simple text file viewer
+that you can use to select a text fi le and display its contents.
+
+
+
+3. Click Open File.
+The Open File picker appears and displays the fi les in the Documents 
+folder, as shown in the
+following screenshot (the list of fi les and folders might be different 
+on your computer).
+You can use this dialog to move to a folder and select a fi le to display.
+
+
+
+
+4. Move to the \Microsoft Press\VCSBS\Chapter 5\WhileStatement\WhileStatement 
+folder in your
+Documents folder.
+
+
+
+
+5. Select the fi le MainPage.xaml.cs, and then click Open.
+The name of the fi le, MainPage.xaml.cs, appears in the text box at the top of 
+the form, but
+the contents of the fi le do not appear in the large text box. This is because 
+you have not yet
+implemented the code that reads the contents of the fi le and displays it. You 
+will add this
+functionality in the following steps.
+
+
+
+
+
+6. Return to Visual Studio 2017 and stop debugging.
+
+
+
+
+7. Display the code for the fi le MainPage.xaml.cs in the Code and Text Editor 
+window, and locate
+the openFileClick method.
+This method runs when the user clicks the Open button to select a fi le in the 
+Open dialog box. It is not necessary for you to understand the exact details of 
+how this method works
+at this point—simply accept the fact that this method prompts the user for a file
+(using a
+FileOpenPicker or OpenFileDialog window) and opens the selected fi le for reading.
+The fi nal two statements in the openFileClick method are important, however. They 
+look like this:
+TextReader reader = new StreamReader(inputStream.AsStreamForRead()); displayData(reader);
+The fi rst statement declares a TextReader variable called reader. TextReader is a class provided by the Microsoft.NET Framework that you can use for reading streams of characters from sources such as fi les. It is located in the System.IO namespace. This statement makes the data in the fi le specifi ed by the user in the FileOpenPicker available to the TextReader object, which
+can then be used to read the data from the fi le. The fi nal statement calls a method named
+displayData, passing reader as a parameter to this method. The displayData method reads the
+data by using the reader object and displays it on the screen (or it will do so once you have writ-
+ten the code to accomplish this).
+
+
+
+
+8. Examine the displayData method. It currently looks like this:
+private void displayData(TextReader reader)
+{
+// TODO: add while loop here
+}
+You can see that, other than the comment, this method is currently empty. This is where you
+need to add the code to fetch and display the data.
+
+
+
+
+
+9. Replace the // TODO: add while loop here comment with the following statement:
+source.Text = "";
+The source variable refers to the large text box on the form. Setting its Text property to the
+empty string (“”) clears any text that is currently displayed in this text box.
+
+
+
+
+
+10. Add the following statement after the previous line that you added to the displayData method:
+string line = reader.ReadLine();
+This statement declares a string variable called line and calls the reader.ReadLine method to
+read the fi rst line from the fi le into this variable. This method returns either the next line of text from the fi le or a special value called null when there are no more lines to read.
+
+
+
+
+
+11. Add the following statements to the displayData method after the code you have just entered:
+while (line != null)
+{
+source.Text += line + '\n';
+line = reader.ReadLine();
+}
+This is a while loop that iterates through the fi le one line at a time until there are no more lines
+available.
+The Boolean expression at the start of the while loop examines the value in the line variable. If
+it is not null, the body of the loop displays the current line of text by appending it to the Text
+property of the source text box, together with a newline character (‘\n’—the ReadLine method of the TextReader object strips out the newline characters as it reads each line, so the code
+needs to add it back in again). The while loop then reads in the next line of text before perform-
+ing the next iteration. The while loop fi nishes when there is no more text to read in the fi le, and
+the ReadLine method returns a null value.
+
+
+
+
+
+12. Type the following statement after the closing brace at the end of the while loop:
+reader.Dispose();
+This statement releases the resources associated with the fi le and closes it. This is good practice
+because it makes it possible for other applications to use the fi le and also frees up any memory and other resources used to access the fi le.
+
+
+
+13. On the Debug menu, click Start Debugging.
+
+
+
+
+14. When the form appears, click Open File.
+
+
+
+
+15. In the Open fi le picker, move to the \Microsoft Press\VCSBS\Chapter 5\WhileStatement\
+WhileStatement folder in your Documents folder, select the fi le MainPage.xaml.cs, and then click Open.
+Note Don’t try to open a file that does not contain text. If you attempt to open an executable
+program or a graphics fi le, for example, the application will simply display a text
+representation of the binary information in this fi le. If the fi le is large, it might hang the
+application, requiring you to terminate it forcibly.
+This time, the contents of the selected fi le appear in the text box—you should recognize the
+code that you have been editing. The following image shows the application running:
+
+
+
+
+16. Scroll through the text in the text box and fi nd the displayData method. Verify that this method
+contains the code you just added.
+
+
+
+
+17. Return to Visual Studio and stop debugging.
+
+
+
+
+
+Write a do statement
+1. Using Visual Studio 2017, open the DoStatement solution, which is located in the \Microsoft Press\VCSBS\Chapter 5\DoStatement folder in your Documents folder.
+
+
+
+
+2. Display the MainPage.xaml form in the Design View window.
+The form contains a text box called number in which the user can enter a decimal number.
+When the user clicks the Show Steps button, the octal representation of the number entered
+is generated. The text box to the right, called steps, shows the results of each stage of the
+calculation.
+
+
+
+
+3. Display the code for MainPage.xaml.cs in the Code and Text Editor window and locate the
+showStepsClick method.
+This method runs when the user clicks the Show Steps button on the form. Currently, it is empty.
+
+
+
+
+4. Add the following statements shown in bold to the showStepsClick method:
+private void showStepsClick(object sender, RoutedEventArgs e)
+{
+int amount = int.Parse(number.Text);
+steps.Text = "";
+string current = "";
+}
+The fi rst statement converts the string value in the Text property of the number text box into an
+int by using the Parse method of the int type and stores it in a local variable called amount.
+The second statement clears the text displayed in the lower text box by setting its Text property to the empty string.
+The third statement declares a string variable called current and initializes it to the empty string.
+You will use this string to store the digits generated at each iteration of the loop that is used to
+convert the decimal number to its octal representation.
+
+
+
+
+5. Add the following do statement (shown in bold) to the showStepsClick method:
+private void showStepsClick(object sender, RoutedEventArgs e)
+{
+int amount = int.Parse(number.Text);
+steps.Text = "";
+string current = "";
+do
+{
+int nextDigit = amount % 8;
+amount /= 8;
+int digitCode = '0' + nextDigit;
+char digit = Convert.ToChar(digitCode);
+current = digit + current;
+steps.Text += current + "\n";
+}
+while (amount != 0);
+}
+The algorithm used here repeatedly performs integer arithmetic to divide the amount variable by 8 and determine the remainder. The remainder after each successive division constitutes the
+next digit in the string being built. Eventually, when amount is reduced to 0, the loop fi nishes.
+Notice that the body must run at least once. This behavior is exactly what is required because
+even the number 0 has one octal digit.
+Look more closely at the code; you will see that the fi rst statement executed by the do loop is this:
+int nextDigit = amount % 8;
+This statement declares an int variable called nextDigit and initializes it to the remainder after
+dividing the value in amount by 8. This will be a number somewhere between 0 and 7.
+The next statement in the do loop is
+amount /= 8;
+This is a compound assignment statement and is equivalent to writing amount = amount / 8;. If
+the value of amount is 999, the value of amount after this statement runs is 124.
+The next statement is this:
+int digitCode = '0' + nextDigit;
+This statement requires a little explanation. Characters have a unique code according to
+the character set used by the operating system. In the character sets frequently used by the
+Windows operating system, the code for character “0” has integer value 48. The code for char-
+acter “1” is 49, the code for character “2” is 50, and so on, up to the code for character “9,” which
+has integer value 57. With C#, you can treat a character as an integer and perform arithmetic on it, but when you do so, C# uses the character’s code as the value. So the expression ‘0’ + next-
+Digit actually results in a value somewhere between 48 and 55 (remember that nextDigit will be
+between 0 and 7), corresponding to the code for the equivalent octal digit.
+The fourth statement in the do loop is
+char digit = Convert.ToChar(digitCode);
+This statement declares a char variable called digit and initializes it to the result of the Convert.
+ToChar(digitCode) method call. The Convert.ToChar method takes an integer holding a charac-
+ter code and returns the corresponding character. So, for example, if digitCode has the value 54,
+Convert.ToChar(digitCode) returns the character ‘6’.
+To summarize, the fi rst four statements in the do loop have determined the character rep-
+resenting the least-signifi cant (rightmost) octal digit corresponding to the number the user entered. The next task is to prepend this digit to the string to be output, like this:
+current = digit + current;
+The next statement in the do loop is this:
+steps.Text += current + "\n";
+This statement adds to the steps text box the string containing the digits produced so far for the
+octal representation of the number. It also appends a newline character so that each stage of
+the conversion appears on a separate line in the text box.
+Finally, the condition in the while clause at the end of the loop is evaluated:
+while (amount != 0);
+Because the value of amount is not yet 0, the loop performs another iteration.
+In the fi nal exercise of this chapter, you will use the Visual Studio 2017 debugger to step through the previous do statement to help you understand how it works.
+
+
+
+Step through the do statement
+1. In the Code and Text Editor window displaying the MainPage.xaml.cs fi le, move the cursor to
+the fi rst statement of the showStepsClick method:
+int amount = int.Parse(number.Text);
+
+
+
+
+2. Right-click anywhere in the fi rst statement, and then click Run To Cursor.
+
+
+
+
+3. When the form appears, type 999 in the number text box on the left, and then click Show Steps.
+The program stops, and you are placed in Visual Studio 2017 debug mode. A yellow arrow in the
+left margin of the Code and Text Editor window and yellow highlighting on the code indicates
+the current statement
+
+
+
+
+4. In the window below the Code and Text Editor window, click the Locals tab, as highlighted in
+the following image.
+The Locals window displays the name, value, and type of the local variables in the current
+method, including the amount local variable. Notice that the value of amount is currently 0.
+
+
+
+
+5. Display the Debug toolbar if it is not visible. (On the View menu, point to Toolbars, and then
+click Debug.)
+
+
+
+
+6. On the Debug toolbar, click the Step Into button.
+The debugger runs the following statement:
+int amount = int.Parse(number.Text);
+The value of amount in the Locals window changes to 999, and the yellow arrow moves to the
+next statement.
+
+
+
+7. Click Step Into again.
+The debugger runs this statement:
+steps.Text = "";
+This statement does not affect the Locals window because steps is a control on the form and
+not a local variable. The yellow arrow moves to the next statement.
+
+
+
+
+8. Click Step Into.
+The debugger runs the statement shown here:
+string current = "";
+The yellow arrow moves to the opening brace at the start of the do loop. The do loop contains three local variables of its own: nextDigit, digitCode, and digit. Notice that these local variables
+now appear in the Locals window. The value of all three variables is initially set to 0.
+
+
+
+
+9. Click Step Into.
+The yellow arrow moves to the fi rst statement within the do loop.
+
+
+
+10. Click Step Into.
+The debugger runs the following statement:
+int nextDigit = amount % 8;
+The value of nextDigit in the Locals window changes to 7. This is the remainder after dividing 999 by 8.
+
+
+
+
+11. Click Step Into.
+The debugger runs this statement:
+amount /= 8;
+The value of amount changes to 124 in the Locals window.
+
+
+
+
+12. Click Step Into.
+The debugger runs this statement:
+int digitCode = '0' + nextDigit;
+The value of digitCode in the Locals window changes to 55. This is the character code of the
+character “7” (48 + 7).
+
+
+
+
+13. Click Step Into.
+The debugger continues to this statement:
+char digit = Convert.ToChar(digitCode);
+The value of digit changes to “7” in the Locals window. The Locals window shows char
+values using both the underlying numeric value (in this case, 55) and also the character
+representation (“7”).
+Note that in the Locals window, the value of the current variable is still “”.
+
+
+
+
+
+14. Click Step Into.
+The debugger runs the following statement:
+current = current + digit;
+The value of current changes to “7” in the Locals window.
+
+
+
+
+15. Click Step Into.
+The debugger runs the statement shown here:
+steps.Text += current + "\n";"
+This statement displays the text “7” in the steps text box, followed by a newline character to
+cause subsequent output to be displayed on the next line in the text box. (The form is currently hidden behind Visual Studio, so you won’t be able to see it.) The cursor moves to the closing
+brace at the end of the do loop.
+
+
+
+16. Click Step Into.
+The yellow arrow moves to the while statement to evaluate whether the do loop has completed or whether it should continue for another iteration.
+
+
+
+17. Click Step Into.
+The debugger runs this statement:
+while (amount != 0);
+The value of amount is 124, the expression 124 != 0 evaluates to true, so the do loop performs another iteration. The yellow arrow jumps back to the opening brace at the start of the do loop.
+
+
+
+18. Click Step Into.
+The yellow arrow moves to the fi rst statement within the do loop again.
+
+
+
+19. Repeatedly click Step Into to step through the next three iterations of the do loop and watch
+how the values of the variables change in the Locals window.
+
+
+
+20. At the end of the fourth iteration of the loop, the value of amount is 0 and the value of current is
+“1747”. The yellow arrow is on the while condition at the end of the do loop:
+while (amount != 0);
+Because the value of amount is now 0, the expression amount != 0 evaluates to false, and the do
+loop should terminate.
+
+
+
+21. Click Step Into.
+The debugger runs the following statement:
+while (amount != 0);
+As predicted, the do loop fi nishes, and the yellow arrow moves to the closing brace at the end
+of the showStepsClick method.
+
+
+
+22. On the Debug menu, click Continue.
+The form appears, displaying the four steps used to create the octal representation of 999: 7, 47,
+747, and 1747.
+
+
+
+23. Return to Visual Studio 2017. On the Debug menu, click Stop Debugging
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

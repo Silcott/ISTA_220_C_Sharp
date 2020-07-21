@@ -1,0 +1,116 @@
+-- Name: James Silcott
+-- Homework: ISTA220-06
+-- Date: July 20, 2020
+
+Chapter 6:
+1. What is an exception?
+An exception is a problem that arises during the execution of a program. A C# exception is a response 
+to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
+
+Exceptions provide a way to transfer control from one part of a program to another. C# exception 
+handling is built upon four keywords: try, catch, finally, and throw.
+
+
+
+2. What happens in a try block if the program executes without errors?
+if none of the statements generates an
+exception, they all run, one after the other, to completion.
+
+However, if an error condition occurs,
+execution jumps out of the try block and into another piece of code designed to catch and
+handle the exception—a catch handler.
+
+3. How does the catch mechanism work for unhandled exceptions?
+If this occurs and the try block is part of a method, the method immediately exits and execution returns to the calling method. If the calling
+method uses a try block, the runtime attempts to locate and execute a matching catch handler for this
+try block. If the calling method does not use a try block or if there is no matching catch handler, the
+calling method immediately exits, and execution returns to its caller, where the process is repeated. If
+a matching catch handler is eventually found, the handler runs and execution continues with the fi rst statement that follows the catch handler in the catching method.
+
+
+4. What happens in a program if an exception block fails to handle an particular error?
+the program will terminate with an unhandled exception.
+
+
+
+5. What is the parent class for all exceptions? How does this work?
+SystemException
+SystemException is itself a member of a wider family simply called Exception, 
+and this is the great-granddaddy of all exceptions. If you catch
+Exception, the handler traps every possible exception that can occur.
+
+Note The Exception family includes a wide variety of exceptions, many of which are
+intended for use by various parts of the .NET Framework. Some of these exceptions are
+somewhat esoteric, but it is still useful to understand how to catch them.
+
+
+
+6. How do you determine the type of an error?
+A catch handler employs syntax similar to that used by a method parameter to specify the excep-
+tion to be caught. , when a FormatException is thrown, the variable is
+populated with an object containing the details of the exception.
+
+The FormatException type has a number of properties that you can examine to determine the exact
+cause of the exception. Many of these properties are common to all exceptions. For example, the
+Message property contains a text description of the error that caused the exception. You can use this
+information when handling the exception, perhaps recording the details in a log file or displaying a
+meaningful message to the user and then asking the user to try again.
+
+
+
+7. What is the purpose of integer checking?
+integer expression could lead to very poor performance. In many cases, the risk is acceptable because
+you know (or hope!) that your int values won’t reach their limits. If you don’t like this approach, you can
+turn on overfl ow checking.
+
+
+
+8. What is the range of values than a signed Int32 type can contain? State the lowest value and the
+highest value.
+byte	8-bit unsigned integer	0 to 255	
+sbyte	8-bit signed integer	-128 to 127	
+short	16-bit signed integer	-32,768 to 32,767	
+ushort	16-bit unsigned integer	0 to 65,535	
+int	32-bit signed integer	-2,147,483,648
+to
+2,147,483,647	
+uint	32-bit unsigned integer	0 to 4,294,967,295	u
+long	64-bit signed integer	-9,223,372,036,854,775,808
+to
+9,223,372,036,854,775,807	l
+ulong	64-bit unsigned integer	0 to 18,446,744,073,709,551,615	ul
+float	32-bit Single-precision floating point type	-3.402823e38 to 3.402823e38	f
+double	64-bit double-precision floating point type	-1.79769313486232e308 to 1.79769313486232e308	d
+decimal	128-bit decimal type for financial and monetary calculations	(+ or -)1.0 x 10e-28
+to
+7.9 x 10e28
+
+
+
+9. What is the range of values than an unsigned Int32 type can contain? State the lowest value and 
+the highest value. 
+uint	32-bit unsigned integer	0 to 4,294,967,295	u
+
+What is the difference between a signed integer and an unsigned integer? 
+ 
+ A signed integer is a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647]. 
+ 
+ An unsigned integer is a 32-bit datum that encodes a nonnegative integer in the range [0 to 4294967295].
+
+
+Can signed integers and unsigned integers represent the same amount of numbers?
+yes
+
+
+
+10. What does the finally block do?
+By using a finally block, you can clean up any resources that are allocated in a try block, 
+nd you can run code even if an exception occurs in the try block. 
+ypically, the statements of a finally block run when control leaves a try statement. 
+The transfer of control can occur as a result of normal execution, of execution of a break, 
+continue, goto, or return statement, or of propagation of an exception out of the try statement.
+
+
+11. (Thought question) When would you not use a finally block in a try/catch construction?
+
+
