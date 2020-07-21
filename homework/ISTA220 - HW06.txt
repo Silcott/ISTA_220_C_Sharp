@@ -4,6 +4,7 @@
 
 Chapter 6:
 1. What is an exception?
+*SOMETHING GOES WRONG
 An exception is a problem that arises during the execution of a program. A C# exception is a response 
 to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
 
@@ -40,8 +41,7 @@ and this is the great-granddaddy of all exceptions. If you catch
 Exception, the handler traps every possible exception that can occur.
 
 Note The Exception family includes a wide variety of exceptions, many of which are
-intended for use by various parts of the .NET Framework. Some of these exceptions are
-somewhat esoteric, but it is still useful to understand how to catch them.
+intended for use by various parts of the .NET Framework. 
 
 
 
