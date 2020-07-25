@@ -1,0 +1,7 @@
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\bin\Debug\TextHello.exe.config
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\bin\Debug\TextHello.exe
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\bin\Debug\TextHello.pdb
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\obj\Debug\TextHello.csprojAssemblyReference.cache
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\obj\Debug\TextHello.csproj.CoreCompileInputs.cache
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\obj\Debug\TextHello.exe
+C:\Users\silco\quantico06\ISTA220\labs\TextHello\obj\Debug\TextHello.pdb

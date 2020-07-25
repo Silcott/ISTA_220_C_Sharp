@@ -1,0 +1,17 @@
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csprojAssemblyReference.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfoInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfo.cs
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csproj.CoreCompileInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csprojAssemblyReference.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfoInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfo.cs
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csproj.CoreCompileInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.exe
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.deps.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.runtimeconfig.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.runtimeconfig.dev.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.dll
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.pdb
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.dll
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.pdb
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.genruntimeconfig.cache

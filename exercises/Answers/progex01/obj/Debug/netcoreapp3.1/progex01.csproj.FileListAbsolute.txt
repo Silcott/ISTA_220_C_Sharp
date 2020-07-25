@@ -1,0 +1,13 @@
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.csprojAssemblyReference.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.AssemblyInfoInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.AssemblyInfo.cs
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.csproj.CoreCompileInputs.cache
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.exe
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.deps.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.runtimeconfig.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.runtimeconfig.dev.json
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.dll
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\bin\Debug\netcoreapp3.1\progex01.pdb
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.dll
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.pdb
+C:\Users\silco\quantico06\ISTA220_CSharp\exercises\progex01\obj\Debug\netcoreapp3.1\progex01.genruntimeconfig.cache
