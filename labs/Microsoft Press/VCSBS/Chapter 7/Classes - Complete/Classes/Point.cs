@@ -20,10 +20,10 @@ namespace Classes
             objectCount++;
         }
 
-        public Point(int x, int y)
+        public Point(int xVar, int yVar)
         {
-            this.x = x;
-            this.y = y;
+            x = xVar;
+            y = yVar;
             objectCount++;
         }
 

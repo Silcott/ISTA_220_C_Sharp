@@ -1,0 +1,101 @@
+-- Name: James Silcott
+-- Homework: ISTA220-06
+-- Date: July 20, 2020
+
+Chapter 7:
+1. What is a class? According to the book, what does a class “arrange?”
+Class is the root word of the term classifi cation. When you design a class, you systematically arrange
+information and behavior into a meaningful entity.
+
+
+2. What are the two purposes of encapsulatiohn?
+To combine methods and data within a class; in other words, to support classifi cation
+To control the accessibility of the methods and data; in other words, to control the use of
+the class
+
+
+
+3. How do you instantiate an instance of a class? How do you access that instance?
+use class
+declare it as a variable
+
+
+
+
+
+4. What is the default access of the fields and methods of a class? How do you change the default?
+A method or fi eld is private if it is accessible only from within the class. To declare that a method or fi eld is private, you write the keyword private before its declaration. As intimated previously,
+this is actually the default, but it is good practice to state explicitly that fi elds and methods are
+private to avoid any confusion
+
+A method or fi eld is public if it is accessible both within and from outside the class. To declare
+that a method or fi eld is public, you write the keyword public before its declaration.
+
+5. What is the syntax for writing a constructor?
+PascalCase
+camelCase
+Identifi ers that are public should start with a capital letter. For example, Area starts with
+A (not a) because it’s public. This system is known as the PascalCase naming scheme (because it was fi rst used in the Pascal language).
+■ Identifi ers that are not public (which include local variables) should start with a lowercase
+letter. For example, radius starts with r (not R) because it’s private. This system is known as the camelCase naming scheme.
+Note Some organizations use the camelCase scheme only for methods and adopt
+the convention to name private fi elds starting with an underscore character, such as _radius. However, the examples in this book use camelCase naming for private
+methods and fi elds.
+
+
+6. What is the difference between class fields and methods, and instance fields ad methods? How do you
+create class fields and methods?
+A field is a variable that is declared directly in a class or struct. ... 
+A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. 
+Properties can be used as if they are public data members, but they are actually special methods called accessors.
+
+
+
+7. How do you bring a static class in scope? Why would you want to bring a static class in scope?
+Whenever you call a static method or reference a static fi eld, you must specify the class to which the
+method or fi eld belongs, such as Math.Sqrt or Console.WriteLine. Static using statements enable you to
+bring a class into scope and omit the class name when accessing static members.
+They operate in much
+the same way as ordinary using statements that bring namespaces into scope.
+
+
+
+8. Can you think of a good reason to create an anonymous class? What is it?
+This sounds rather strange, but it is actually quite handy in some situations that you will see later in this book, especially when using query
+expressions.
+
+You create an anonymous class simply by using the new keyword and a pair of braces defi ning the
+fi elds and values that you want the class to contain,
+
+
+9. What is polymorphism as this term is used in computer science? This is not in the book.
+In c#, Polymorphism means providing an ability to take more than one form and it's one of the main 
+pillar concepts of object-oriented programming, after encapsulation and inheritance. Generally, 
+the polymorphism is a combination of two words, one is poly and another one is morphs.
+
+
+
+
+10. What is message passing as this term is used in computer science? This is not in the book.
+In computer science, message passing is a technique for invoking behaviour (i.e., running a program) 
+on a computer. 
+
+The invoking of a program sends a message to a process (which may be an actor or object) 
+and relies on the process and the supporting infrastructure to select and invoke the actual code to run. 
+Message passing differs from conventional programming where a process, subroutine, 
+or function is directly invoked by name.
+
+
+11. What was the first object-oriented programming language?
+Simula
+
+
+
+
+12. Consider this quote by Alexander Stepanov:
+I find OOP technically unsound. It attempts to decompose the world in terms of interfaces
+that vary on a single type. To deal with the real problems you need multisorted algebras
+— families of interfaces that span multiple types. I find OOP philosophically unsound. It
+claims that everything is an object. Even if it is true it is not very interesting — saying that
+everything is an object is saying nothing at all.
+Who is Alexander Stephanov? What do you think about this quote?
