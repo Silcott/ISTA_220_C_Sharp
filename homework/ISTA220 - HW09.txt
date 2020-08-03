@@ -1,0 +1,201 @@
+-- Name: James Silcott
+-- Homework: ISTA220-09
+-- Date: August 3, 2020
+
+Chapter 8:
+1. What is an enum?
+In C#, an enum (or enumeration type) is used to assign constant names to a group of numeric integer values. It makes constant values more readable, for example, WeekDays.Monday is more readable then number 0 when referring to the day in a week.
+
+An enum is defined using the enum keyword, directly inside a namespace, class, or structure. All the constant names can be declared inside the curly brackets and separated by a comma. The following defines an enum for the weekdays.
+
+Example: Define an Enum
+enum WeekDays
+{
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+An enum can be accessed using the dot syntax: enum.member
+
+Example: Access Enum
+enum WeekDays
+{
+    Monday, 
+    Tuesday,
+    Wednesday,
+    Thursday, 
+    Friday, 
+    Saturday,
+    Sunday 
+}
+
+Console.WriteLine(WeekDays.Monday); // Monday
+Console.WriteLine(WeekDays.Tuesday); // Tuesday
+Console.WriteLine(WeekDays.Wednesday); // Wednesday
+Console.WriteLine(WeekDays.Thursday); // Thursday
+Console.WriteLine(WeekDays.Friday); // Friday
+Console.WriteLine(WeekDays.Saturday); // Saturday
+Console.WriteLine(WeekDays.Sunday); // Sunday
+
+2. Declare an enum for military ranks, either officer or enlisted. Name it Ranks. What are the symbols,
+like Private, Corporal, Sergeant or Lieutenant, Captain, Major?
+enum Ranks
+{
+    Private=2,
+	Corporal=4,
+	Sergeant=5,
+	Lieutenant=1,
+	Captain=3,
+	Major=4
+}
+
+
+3. Using the Ranks enum, assign a rank to yourself and a friend.
+enum Ranks
+{
+    Me=2,
+	Friend=1
+}
+
+
+4. Determine the numeric index of particular ranks, using the Ranks enum.
+enum Ranks
+{
+    Private=2,
+	Corporal=4,
+	Sergeant=5,
+	Lieutenant=1,
+	Captain=3,
+	Major=4
+}
+
+
+5. How do you select the type of an enum?
+The enum can be of any numeric data type such as byte, sbyte, short, ushort, int, uint, long, or ulong. However, an enum cannot be a string type.
+
+Specify the type after enum name as : type. The following defines the byte enum.
+
+Example: byte Enum
+enum Categories: byte
+{
+    Electronics = 1,  
+    Food = 5, 
+    Automotive = 6, 
+    Arts = 10, 
+    BeautyCare = 11, 
+    Fashion = 15
+}
+Explicit casting is required to convert from an enum type to its underlying integral type.
+
+Example: Enum Conversion
+enum WeekDays
+{
+    Monday, 
+    Tuesday,
+    Wednesday,
+    Thursday, 
+    Friday, 
+    Saturday,
+    Sunday 
+}
+
+Console.WriteLine(WeekDays.Friday); //output: Friday 
+int day = (int) WeekDays.Friday; // enum to int conversion
+Console.WriteLine(day); //output: 4 
+		
+var wd = (WeekDays) 5; // int to enum conversion
+Console.WriteLine(wd);//output: Saturday
+
+6. What is a struct?
+In C#, struct is the value type data type that represents data structures. 
+It can contain a parameterized constructor, static constructor, constants, fields, 
+methods, properties, indexers, operators, events, and nested types.
+
+struct can be used to hold small data values that do not require inheritance, e.g. 
+coordinate points, key-value pairs, and complex data structure
+A structure is declared using struct keyword. The default modifier is internal for the struct and its members.
+
+The following example declares a structure Coordinate for the graph.
+
+Example: Structure
+struct Coordinate
+{
+    public int x;
+    public int y;
+}
+
+Structures can have methods, fields, indexers, properties, operator methods, and events.
+Structures can have defined constructors, but not destructors. 
+However, you cannot define a default constructor for a structure. 
+The default constructor is automatically defined and cannot be changed.
+Unlike classes, structures cannot inherit other structures or classes.
+Structures cannot be used as a base for other structures or classes.
+A structure can implement one or more interfaces.
+Structure members cannot be specified as abstract, virtual, or protected.
+When you create a struct object using the New operator, 
+it gets created and the appropriate constructor is called. 
+Unlike classes, structs can be instantiated without using the New operator.
+If the New operator is not used, the fields remain unassigned and the object cannot be used until all the fields are initialized.
+
+
+7. List some differences between classes and structs.
+A structure is a value type so it is stored on the stack, but a class is a reference type and is stored on the heap.
+A structure doesn't support inheritance, and polymorphism, but a class supports both.
+By default, all the struct members are public but class members are by default private in nature.
+As a structure is a value type, we can't assign null to a struct object, but it is not the case for a class.
+
+
+8. Are structs stored on the stack or on the heap? What about enums?
+A structure is a value type so it is stored on the stack, but a class is a reference type and is stored on the heap.
+
+
+9. Review the documentation for the C# System.Int32 struct. List the fields. List the methods.
+Fields
+FIELDS	DESCRIPTION
+MaxValue	This field is used to represent the largest possible value of an Int32. This field is constant.
+MinValue	This field is used to represent the smallest possible value of Int32. This field is constant.
+
+
+Methods
+METHOD	DESCRIPTION
+CompareTo()	This method is used to compare this instance to a specified object or Int32 and returns an indication of their relative values.
+Equals()	This method is used to return a value indicating whether this instance is equal to a specified object or Int32.
+GetHashCode()	This method is used to return the hash code for this instance.
+GetTypeCode()	This method is used to return the TypeCode for value type Int32.
+Parse()	This method is used to convert the string representation of a number to its 32-bit signed integer equivalent.
+ToString()	This method is used to convert the numeric value of this instance to its equivalent string representation.
+TryParse()	This method is used to convert the string representation of a number to its 32-bit signed integer equivalent. A return value indicates whether the operation succeeded.
+
+10. Declare a struct named DOD with four branches.
+struct DoD {
+	public string Air Force;
+	public string Army;
+	public string Marine,
+	public string Navy;
+	};
+	
+
+
+11. Why can’t you create a default constructor for a struct?
+a C# struct is associated with value-type semantic and a value-type is not required to have a constructor.
+CLR (not C#) allows a value-type to have a default constructor but it is not guaranteed to be always called.
+To avoid the ambiguity of whether the default constructor of a value-type would be called or not C# compiler 
+does not insert a call to a value-type default constructor, and that precludes the definition of one.
+A C# struct cannot have a default constructor, but it can declare a constructor that has parameters.
+
+
+
+12. What is CIL? What does the CLR do to the CIL?
+Common Language Runtime (CLR) is a managed execution environment that is part of Microsoft’s .NET framework. 
+CLR manages the execution of programs written in different supported languages.
+
+CLR transforms source code into a form of bytecode known as Common Intermediate Language (CIL). 
+At run time, CLR handles the execution of the CIL code.
+
+
+
+

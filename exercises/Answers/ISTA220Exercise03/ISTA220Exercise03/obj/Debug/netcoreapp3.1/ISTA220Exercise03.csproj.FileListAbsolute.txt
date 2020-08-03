@@ -1,0 +1,13 @@
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.exe
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.deps.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.runtimeconfig.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.runtimeconfig.dev.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.dll
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\bin\Debug\netcoreapp3.1\ISTA220Exercise03.pdb
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.AssemblyInfoInputs.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.AssemblyInfo.cs
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.dll
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.pdb
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise03\ISTA220Exercise03\obj\Debug\netcoreapp3.1\ISTA220Exercise03.genruntimeconfig.cache

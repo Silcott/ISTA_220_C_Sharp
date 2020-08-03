@@ -1,0 +1,150 @@
+-- Name: James Silcott
+-- Homework: ISTA220-08
+-- Date: July 28, 2020
+
+Chapter 8:
+1. What is the difference between deep copy and shallow copy?
+A Shallow Copy is about copying an object's value type fields into the target object and 
+the object's reference types are copied as references into the target object but not the referenced object itself. 
+It copies the types bit by bit. The result is that both instances are cloned and the original will refer to the same object.
+
+Deep Copy is used to make a complete deep copy of the internal reference types
+deep copy occurs when an object is copied along with the objects to which it refers.
+
+2. What is the value of a reference after you declare and initialize it?  
+value of a variable and the default value of a reference type variable is null when they are not initialized. 
+Null means not refering to any object.
+Note that the initialization of a reference is not the same as an assignment to a reference. 
+Initialization operates on the actual reference by binding the reference to the object it is an alias for. Assignment operates through the reference on the object referred to.
+
+A reference can be declared without an initializer:
+When it is used in a parameter declaration
+In the declaration of a return type for a function call
+In the declaration of class member within its class declaration
+When the extern specifier is explicitly used
+
+
+
+
+3. How do you declare a value type?
+declare a variable, it is always a good idea to initialize it. With value types, it is common to
+see code such as this:
+int i = 0;
+double d = 0.0;
+The following data types are all of value type:
+
+bool
+byte
+char
+decimal
+double
+enum
+float
+int
+long
+sbyte
+short
+struct
+uint
+ulong
+ushort
+
+4. How do you declare a reference type?
+string s = "Hello World!!";
+
+The followings are reference type data types:
+String
+Arrays (even if their elements are value types)
+Class
+Delegate
+
+5. Does C# allow you to assign NULL to a value type?
+yes
+
+
+
+
+6. Can you assign a nullable value type to a non-nullable variable of the same type? Why or why not?
+You can retrieve the value of a nonnull nullable type by reading the Value
+property, like this:
+int? i = null;
+...
+if (!i.HasValue)
+{
+// If i is null, then assign it the value 99
+i = 99;
+}
+else
+{
+// If i is not null, then display its value
+
+
+
+
+7. What is the difference between the stack and the heap?
+Stack memory is organized like a stack of boxes piled on top of one another. When a method is
+called, each parameter is placed in a box that is placed on top of the stack. Each local variable is
+likewise assigned a box, and these are placed on top of the boxes already on the stack. When a
+method fi nishes, you can think of the boxes being removed from the stack.
+
+Heap memory is like a large pile of boxes strewn around a room rather than stacked neatly on
+top of one another. Each box has a label indicating whether it is in use. When a new object is
+created, the runtime searches for an empty box and allocates it to the object. The reference to
+the object is stored in a local variable on the stack. The runtime keeps track of the number of
+references to each box. (Remember that two variables can refer to the same object.) When the
+last reference disappears, the runtime marks the box as not in use, and at some point in the
+future it will empty the box and make it available.
+
+
+8. What does it mean when we say that all classes are specialized types?
+For the time being, simply
+accept that all classes are specialized types of System.Object and that you can use System.Object to
+create a variable that can refer to any reference type. System.Object is such an important class that C#
+provides the object keyword as an alias for System.Object. In your code, you can use object, or you can
+write System.Object—they mean the same thing.
+
+
+
+
+9. What does ref do?
+If you prefi x a parameter with the ref keyword, the C# compiler generates code that passes a reference
+to the actual argument rather than a copy of the argument. When using a ref parameter, anything you
+do to the parameter you also do to the original argument because the parameter and the argument
+both reference the same data. When you pass an argument as a ref parameter, you must also prefi x
+the argument with the ref keyword
+
+
+
+10. What does out do?
+The compiler checks whether a ref parameter has been assigned a value before calling the method.
+However, there might be times when you want the method itself to initialize the parameter. 
+You can do this with the out keyword.
+The out keyword is syntactically similar to the ref keyword. You can prefi x a parameter with the
+out keyword so that the parameter becomes an alias for the argument. As when using ref, anything
+you do to the parameter, you also do to the original argument. When you pass an argument to an out
+parameter, you must also prefi x the argument with the out keyword.
+The keyword out is short for output. When you pass an out parameter to a method, 
+the method must assign a value to it before it fi nishes or returns
+
+
+
+11. Describe boxing and unboxing in your own words.
+Boxing is the process of converting a value type to the type object or to any interface type 
+implemented by this value type. When the common language runtime (CLR) boxes a value type, 
+it wraps the value inside a System. Object instance and stores it on the managed heap. 
+
+Unboxing extracts the value type from the object.
+
+
+
+12. What does cast do
+To obtain the value of the boxed copy, you must use what is known as a cast. This is an operation
+that checks whether converting an item of one type to another is safe before actually making the copy.
+You prefi x the object variable with the name of the type in parentheses
+
+By using a cast, you can specify that, in your opinion, the data referenced by an object has a specifi c type and that it is safe to reference the object by using that type. The key phrase here is “in your opinion.”
+The C# compiler will not check that this is the case, but the runtime will. If the type of object in memory does not match the cast, the runtime will throw an InvalidCastException, as described in the preceding
+section. You should be prepared to catch this exception and handle it appropriately if it occurs.
+However, catching an exception and attempting to recover if the type of an object is not what you
+expected it to be is a rather cumbersome approach. C# provides two more very useful operators that
+can help you perform casting in a much more elegant manner: the is and as operators

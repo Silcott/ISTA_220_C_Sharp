@@ -1,0 +1,13 @@
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.exe
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.deps.json
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.runtimeconfig.json
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.runtimeconfig.dev.json
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.dll
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\bin\Debug\netcoreapp3.1\Quiz4.pdb
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.AssemblyInfoInputs.cache
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.AssemblyInfo.cs
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.dll
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.pdb
+C:\Github\repo\ISTA_220_CSharp\quizzes\Answers\Quiz4\Quiz4\obj\Debug\netcoreapp3.1\Quiz4.genruntimeconfig.cache
