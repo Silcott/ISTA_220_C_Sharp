@@ -1,0 +1,7 @@
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\bin\Debug\StructsAndEnums.exe.config
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\bin\Debug\StructsAndEnums.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\bin\Debug\StructsAndEnums.pdb
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\obj\Debug\StructsAndEnums.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\obj\Debug\StructsAndEnums.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\obj\Debug\StructsAndEnums.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 9\StructsAndEnums - Complete\StructsAndEnums\obj\Debug\StructsAndEnums.pdb

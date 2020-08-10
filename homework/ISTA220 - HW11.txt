@@ -1,0 +1,105 @@
+-- Name: James Silcott
+-- Homework: ISTA220-11
+-- Date: August 10, 2020
+
+Chapter 11:
+1. What is a parameter array?
+
+By using the params keyword, you can specify a method parameter that takes a variable number of arguments. The parameter type must be a single-dimensional array.
+
+No additional parameters are permitted after the params keyword in a method declaration, and only one params keyword is permitted in a method declaration.
+
+If the declared type of the params parameter is not a single-dimensional array, compiler error CS0225 occurs.
+
+When you call a method with a params parameter, you can pass in:
+
+A comma-separated list of arguments of the type of the array elements.
+An array of arguments of the specified type.
+No arguments. If you send no arguments, the length of the params list is zero.
+
+
+
+2. How do you define a method that takes an arbitrary number of arguments?
+
+A method that takes optional parameters still has a fi xed parameter list, and you cannot pass an arbitrary list of arguments. The compiler generates code that inserts the default values onto
+the stack for any missing arguments before the method runs, and the method is not aware of
+which of the arguments are provided by the caller and which are compiler-generated defaults.
+■ A method that uses a parameter array effectively has a completely arbitrary list of parameters,
+and none of them has a default value. Furthermore, the method can determine exactly how
+many arguments the caller provided.
+
+
+
+3. How do you call a method that takes an arbitrary number of argiments?
+class Util
+{
+public static int Min(params int[] paramList)
+{
+// code exactly as before
+}
+}
+
+
+
+
+4. Why can’t you use an array to pass an arbitrary number of arguments to a method?
+
+A method that takes optional parameters still has a fi xed parameter list, and you cannot pass an arbitrary list of arguments. The compiler generates code that inserts the default values onto
+the stack for any missing arguments before the method runs, and the method is not aware of
+which of the arguments are provided by the caller and which are compiler-generated defaults.
+
+
+
+5. How many parameters can a method have?
+
+A method that uses a parameter array effectively has a completely arbitrary list of parameters,
+and none of them has a default value. Furthermore, the method can determine exactly how
+many arguments the caller provided.
+Generally, you use parameter arrays for methods that can take any number of parameters (including none), whereas you use optional parameters only where it is not convenient to force a caller to provide
+an argument for every parameter.
+
+
+
+6. Do parameter arguments have to have the same type?
+
+yes
+
+
+
+7. What is the difference between a method that takes a parameter argument and one that takes optional
+arguments?
+
+Generally, you use parameter arrays for methods that can take any number of parameters (including none), whereas you use optional parameters only where it is not convenient to force a caller to provide
+an argument for every parameter.
+
+
+
+8. How do you define a method that takes different (and arbitrary) types of arguments?
+If you defi ne a method that takes a parameter list and provide an overload that takes optional parameters, it is not always immediately apparent which
+version of the method will be called if the argument list in the calling statement matches both method signatures
+
+
+
+9. Write a method that accepts any number of arguments of a given type.
+
+Console.WriteLine(Util.Sum(2, 4, 6, 8));
+
+
+
+
+10. Write a method that accepts any number of arguments of any type.
+
+public static int Sum(params int[] paramList)
+{
+...
+int sumTotal = 0;
+foreach (int i in paramList)
+{
+sumTotal += i;
+}
+return sumTotal;
+}
+
+
+
+

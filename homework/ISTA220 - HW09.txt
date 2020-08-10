@@ -4,9 +4,13 @@
 
 Chapter 8:
 1. What is an enum?
-In C#, an enum (or enumeration type) is used to assign constant names to a group of numeric integer values. It makes constant values more readable, for example, WeekDays.Monday is more readable then number 0 when referring to the day in a week.
+In C#, an enum (or enumeration type) is used to assign constant names to a group of numeric integer values.
+It makes constant values more readable, for example, WeekDays.Monday is more readable then number 0 
+when referring to the day in a week.
 
-An enum is defined using the enum keyword, directly inside a namespace, class, or structure. All the constant names can be declared inside the curly brackets and separated by a comma. The following defines an enum for the weekdays.
+An enum is defined using the enum keyword, directly inside a namespace, class, or structure. 
+All the constant names can be declared inside the curly brackets and separated by a comma.
+The following defines an enum for the weekdays.
 
 Example: Define an Enum
 enum WeekDays
@@ -50,7 +54,7 @@ enum Ranks
 	Sergeant=5,
 	Lieutenant=1,
 	Captain=3,
-	Major=4
+	Major=4.5
 }
 
 
@@ -75,7 +79,8 @@ enum Ranks
 
 
 5. How do you select the type of an enum?
-The enum can be of any numeric data type such as byte, sbyte, short, ushort, int, uint, long, or ulong. However, an enum cannot be a string type.
+The enum can be of any numeric data type such as byte, sbyte, short, ushort, int, uint, long, or ulong. 
+However, an enum cannot be a string type.
 
 Specify the type after enum name as : type. The following defines the byte enum.
 
@@ -171,9 +176,10 @@ ToString()	This method is used to convert the numeric value of this instance to 
 TryParse()	This method is used to convert the string representation of a number to its 32-bit signed integer equivalent. A return value indicates whether the operation succeeded.
 
 10. Declare a struct named DOD with four branches.
-struct DoD {
-	public string Air Force;
-	public string Army;
+struct DoD 
+	{
+	public string Air Force,
+	public string Army,
 	public string Marine,
 	public string Navy;
 	};
@@ -192,7 +198,6 @@ A C# struct cannot have a default constructor, but it can declare a constructor 
 12. What is CIL? What does the CLR do to the CIL?
 Common Language Runtime (CLR) is a managed execution environment that is part of Microsoft’s .NET framework. 
 CLR manages the execution of programs written in different supported languages.
-
 CLR transforms source code into a form of bytecode known as Common Intermediate Language (CIL). 
 At run time, CLR handles the execution of the CIL code.
 

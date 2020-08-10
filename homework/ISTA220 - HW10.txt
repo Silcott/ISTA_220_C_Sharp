@@ -1,0 +1,149 @@
+-- Name: James Silcott
+-- Homework: ISTA220-10
+-- Date: August 4, 2020
+
+Chapter 10:
+1. What does an array look like in memory?
+An array is an unordered sequence of items
+The items in an array live in a contiguous (touching, sharing a common border)
+block of memory and are accessed by using an index, unlike fi elds in a structure or class, which are
+accessed by name.
+
+
+
+
+2. Where is memory allocated to hold an array, on the stack or on the heap?
+Arrays are reference types, regardless of the type of their elements. 
+This means that an array variable refers to a contiguous block of memory holding the array elements on the heap, 
+just as a class variable refers to an object on the heap. (For a description of values and references and the differences between
+the stack and the heap, 
+
+This rule applies regardless of the type of the data items in the array. Even if the array contains a value type such as int,
+the memory will still be allocated on the heap; this is the one case where value types are not allocated
+memory on the stack
+
+
+
+
+3. Where is memory allocated to hold an array reference, on the stack or on the heap?
+Arrays follow the same pattern: when you declare an array variable,
+you do not declare its size and no memory is allocated (other than to hold the reference on the stack).
+The array is given memory only when the instance is created, and this is also the point at which you
+specify the size of the array
+
+
+
+
+4. Can an array hold values of different types? This is a trick question, the answer is, “It depends.” What
+determines the types that an array can hold?
+YES
+var names = new[] { new { Name = "John", Age = 53 },
+new { Name = "Diana", Age = 53 },
+new { Name = "James", Age = 26 },
+new { Name = "Francesca", Age = 23 } };
+
+
+5. Describe the syntax of the condition for a foreach loop.
+
+
+arrays start at element 0 and that the last element
+is numbered Length – 1. C# provides the foreach statement, with which you can iterate through the ele-
+ments of an array without worrying about these issues. 
+
+For example, here’s the preceding for statement
+rewritten as an equivalent foreach statement:
+
+int[] pins = { 9, 3, 7, 2 };
+foreach (int pin in pins)
+{
+Console.WriteLine(pin);
+}
+
+
+
+
+6. How do you make a deep copy of a array?
+If the elements in the array being copied contain references, the Clone method simply
+copies the references rather than the objects being referred to. 
+After copying, both arrays refer to the same set of objects. 
+If you need to create a deep copy of such an array, you must use appropriate code in a for loop.
+
+
+
+
+7. What is the difference in the syntax between a multi-dimensional array and an array of arrays?
+Array of arrays (jagged arrays) are faster than multi-dimensional arrays and can be used more effectively. 
+Multidimensional arrays have nicer syntax
+
+Jagged arrays ([][]) arrays where the element type is an array too [], so basically is just a one-dimension array.
+
+Multidimensional arrays ([,]) are arrays that have more than one dimension, but all elements are in the same array.
+
+
+
+8. What is the difference in the uses for a multi-dimensional array and an array of arrays? In other words,
+what determines whether you would use one as opposed to the other?
+The arrays shown so far have contained a single dimension, 
+and you can think of them as simple lists of values. You can create arrays with more than one dimension. For example, to create a two-
+dimensional array, you specify an array that requires two integer indexes.
+
+you can think of the array as a table, with
+the fi rst dimension specifying a number of rows and the second specifying a number of columns.
+
+
+
+9. How do you “flatten” a multidimensional array? In other words, take something that looks like a
+matrix
+
+
+1 2 3
+4 5 6
+7 8 9
+
+ and turn it into an array [1, 2, 3, 4, 5, 6, 7, 8, 9]? Write the code to do this in English.
+
+
+int[,] elements = { { 1, 2, 3 }, { 4, 5, 6 }, {7, 8, 9} }
+
+foreach (int value in result)
+        {
+            Console.WriteLine("ELEMENT: {0}", value);
+        }
+
+ int[][] twoDimensional = new int[][] 
+                                     {
+                                      new int[] {1, 2},
+                                      new int[] {3, 4},
+                                      new int[] {5, 6}
+                                     };
+            int[] flattened = twoDimensional.SelectMany(x => x).ToArray();
+            //Console.WriteLine(flattened);
+            foreach (int number in flattened)
+            {
+                Console.WriteLine(number);
+            }
+            //Console.WriteLine(flattened);
+
+
+10. (Thought question) When we use a for loop, we can change the values of the array elements inside
+the loop. When we use a foreach loop, we cannot change the values of the arry elements inside the
+loop. Why not? How is for different from foreach?
+https://kodify.net/csharp/loop/foreach-read-only/
+
+Why C#‘s foreach loop cannot change what it loops over
+With a foreach loop we easily iterate over all elements in a collection. During each pass through the loop, t
+he loop variable is set to an element from a collection. 
+This makes the loop easy to work with: there's no variable or loop index to manage ourselves.
+
+However, that loop variable is a read-only copy of the actual element of the collection that we loop over 
+(Price, 2017; Sharp, 2013). So while we get the element's value (as a copy), our loop doesn't work with the actual element itself.
+
+Any change that we make to the loop variable isn't fed back into the collection 
+(see the foreach interfaces for specifics). 
+Instead, changes are simply discarded at the end of each loop cycle. 
+As a result we cannot modify the collection we loop over (Stephens, 2014).
+
+To prevent confusion with the foreach loop, don't bother with changing the loop variable inside the loop. 
+Instead have your code treat the variable like it is: a read-only copy of the element's value.
+
+If you need to change the values of elements inside a loop, the for loop and while loop are better choices.
