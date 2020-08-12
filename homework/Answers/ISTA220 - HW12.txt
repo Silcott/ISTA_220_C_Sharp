@@ -1,0 +1,163 @@
+-- Name: James Silcott
+-- Homework: ISTA220-12
+-- Date: August 10, 2020
+
+5 steps
+requirements
+analysis
+design
+implementation
+testing
+
+Use Case--
+name
+ID optional
+Related optionalBrief Desciption optional
+Actors
+Trigger
+Precondintions
+Postconditions
+Normal Flow
+Alternate Flow
+
+When you write code for teh second time (or the first time you attempted to copy and paste) 
+stop dead in your tracks and create a method, putthat code in the method and call that method
+capsulate tht piece of code in a method (main block of code)
+When you write code there are pieces of code you will write a lot, DRY
+
+To be as lazy as possible
+
+Chapter 12:
+1. How does inheritance promote the principle of don’t repeat yourself (DRY)?
+
+You can reuse code from the base classes.
+
+You need to apply the same class and methods to different data types.
+
+The class hierarchy is reasonably shallow, and other developers are not likely to add many more levels.
+
+You want to make global changes to derived classes by changing a base class.
+
+Your inheritance hierarchy represents an "is-a" relationship and not a "has-a" relationship.
+
+
+
+2. What is the syntax of a derived class that inherits from a base class?
+
+
+class DerivedClass : BaseClass
+{
+...
+}
+
+
+3. Do all user defined types (classes and structs) inherit from some base class? If so, what is it?
+
+Important Inheritance applies only to classes, not to structures. You cannot defi ne your own inheritance hierarchy with structures, and you cannot defi ne a structure that derives
+from a class or another structure.
+All structures actually inherit from an abstract class named System.ValueType. (Chapter 13 explores abstract classes.) This is purely an implementation detail of the way in which the
+Microsoft .NET Framework defi nes the common behavior for stack-based value types; you
+are unlikely to make direct use of ValueType in your own applications
+
+
+
+4. What happens if you do not have a default constructor in a base class when creating a derived class?
+
+This works if Mammal has a public default constructor. However, not all classes have a public default
+constructor (for example, remember that the compiler generates a default constructor only if you don’t
+write any nondefault constructors), in which case, forgetting to call the correct base-class constructor
+results in a compile-time error.
+
+
+
+5. Can you assign a variable of a derived class to another variable of its base class? Why or why not?
+
+Previous examples in this book show how to declare a variable by using a class type and how to use the
+new keyword to create an object. There are also examples of how the type-checking rules of C# pre-
+vent you from assigning an object of one type to a variable declared as a different type.
+
+However, it is possible to refer to an object from a variable of a different type as long as the type used is a class that is higher up the inheritance hierarchy. So the following statements are legal:
+Horse myHorse = new Horse(...);
+Mammal myMammal = myHorse; // legal, Mammal is the base class of Horse
+
+6. Can you assign a variable of a derived class to another variable of of a derived class of its base class?
+Why or why not?
+
+No
+
+u can access only methods and fields that are defined by
+the base class.
+
+7. Can you assign a variable of a base class to another variable of a derived class? Why or why not?
+
+Yes but as long as you first check that
+the base class is really a derived class
+using the as or is operator or by using a cast (
+Horse myHorseAgain = myMammal as Horse; // OK - myMammal was a Horse
+...
+Whale myWhale = new Whale(...);
+myMammal = myWhale;
+...
+myHorseAgain = myMammal as Horse; // returns null - myMammal was a Whale
+
+
+
+8. Under what circumstances would you want to use the new keyword when defining a method in a
+derived class?
+Two methods that have the same name and that take the same list of parameters have the same signature, even if they return different types.
+A method in a derived class masks (or hides) a method in a base class that has the same signature
+
+
+
+
+9. What is a virtual method? Why would you want to define a virtual method?
+
+A method that is intended to be overridden is called a virtual method. You should be clear on the
+difference between overriding a method and hiding a method. Overriding a method is a mechanism for
+providing different implementations of the same method—the methods are all related because they are intended to perform the same task, but in a class-specifi c manner. Hiding a method is a means of
+replacing one method with another—the methods are usually unrelated and might perform totally dif-
+ferent tasks. Overriding a method is a useful programming concept; hiding a method is often an error.
+
+
+
+10. What does override do? Why does it do it?
+Overriding a method is a mechanism for
+providing different implementations of the same method—the methods are all related because they are intended to perform the same task, but in a class-specifi c manner.
+
+
+
+11. How do you define an extension type?
+Using an extension method, you can extend an existing type (a class or structure) with additional
+static methods. These static methods become immediately available to your code in any statements
+that reference data of the type being extended.
+
+}
+
+
+
+
+12. Why do you define an extension type?
+You defi ne an extension method in a static class and specify the type to which the method applies
+as the fi rst parameter to the method, along with the this keyword. Here’s an example showing how you
+can implement the Negate extension method for the int type:
+static class Util
+{
+public static int Negate(this int i)
+{
+return -i;
+}
+
+
+
+
+13. (Not in book) Explain the Liskov substitution principle.
+
+A great example illustrating LSP (given by Uncle Bob in a podcast I heard recently) was how sometimes something that sounds right in natural language doesn't quite work in code.
+
+In mathematics, a Square is a Rectangle. Indeed it is a specialization of a rectangle. The "is a" makes you want to model this with inheritance. However if in code you made Square derive from Rectangle, then a Square should be usable anywhere you expect a Rectangle. This makes for some strange behavior.
+
+Imagine you had SetWidth and SetHeight methods on your Rectangle base class; this seems perfectly logical. However if your Rectangle reference pointed to a Square, then SetWidth and SetHeight doesn't make sense because setting one would change the other to match it. In this case Square fails the Liskov Substitution Test with Rectangle and the abstraction of having Square inherit from Rectangle is a bad one
+
+
+
+

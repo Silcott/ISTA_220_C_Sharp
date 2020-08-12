@@ -66,27 +66,27 @@ namespace Quiz6_Cards
 
 
 
-PrintHand(4);
-PrintCard(52);
+//PrintHand(4);
+//PrintCard(52);
 
-static void PrintHand(int deck)
-{
-    if (deck % 4 == 0) Console.Write(" ~~North~~ ");
-    else if (deck % 4 == 0) Console.Write(" ~~West~~ ");
-    else if (deck % 4 == 0) Console.Write(" ~~South~~ ");
-    else if (deck % 4 == 0) Console.Write(" ~~East~~ ");
-    else Console.Write("ERROR in PrintHand()");
+//static void PrintHand(int deck)
+//{
+//    if (deck % 4 == 0) Console.Write(" ~~North~~ ");
+//    else if (deck % 4 == 0) Console.Write(" ~~West~~ ");
+//    else if (deck % 4 == 0) Console.Write(" ~~South~~ ");
+//    else if (deck % 4 == 0) Console.Write(" ~~East~~ ");
+//    else Console.Write("ERROR in PrintHand()");
 
-}
+//}
 
-static void PrintCard(int i, string cr = " ")
-{
-    string[] value = {"two", "three", "four", "five", "six", "seven", "eight", "nine",
-                "ten", "Jack", "Queen", "King", "Ace"};
-    string[] suit = { "Clubs", "Diamonds", "Hearts", "Spades" };
-    string card = $"{value[i % 13]} of {suit[i / 13]}";
-    Console.Write($"{card}{cr} ");
-}
+//static void PrintCard(int i, string cr = " ")
+//{
+//    string[] value = {"two", "three", "four", "five", "six", "seven", "eight", "nine",
+//                "ten", "Jack", "Queen", "King", "Ace"};
+//    string[] suit = { "Clubs", "Diamonds", "Hearts", "Spades" };
+//    string card = $"{value[i % 13]} of {suit[i / 13]}";
+//    Console.Write($"{card}{cr} ");
+//}
 
 
 

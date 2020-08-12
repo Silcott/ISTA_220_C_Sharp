@@ -1,0 +1,7 @@
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\bin\Debug\Vehicles.exe.config
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\bin\Debug\Vehicles.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\bin\Debug\Vehicles.pdb
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\obj\Debug\Vehicles.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\obj\Debug\Vehicles.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\obj\Debug\Vehicles.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 12\Vehicles - Complete\Vehicles\obj\Debug\Vehicles.pdb

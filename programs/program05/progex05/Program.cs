@@ -24,29 +24,95 @@ namespace progex05
             int[] arrayC = new int[] { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9 };
             double avg = 0.0;
 
-            Console.WriteLine("Part 0, Print the Arrays.");
+
+            Console.WriteLine("Part 1: count, sum, mean arrays.");
             printArray(arrayA);
             printArray(arrayB);
             printArray(arrayC);
 
+            Console.WriteLine("\nPart 2: reverse arrays.");
+            Console.WriteLine("Array A Reversed");
+            printReverseArray(arrayA);
+            Console.WriteLine("\nArray B Reversed");
+            printReverseArray(arrayB);
+            Console.WriteLine("\nArray C Reversed");
+            printReverseArray(arrayC);
 
+            Console.WriteLine("\nPart 3: rotate arrays.");
+            Console.WriteLine("Array A rotated");
+            printRotatedArray(arrayA, 6);
+            rightRotateByTwo(array, 2, 7);
+            printRotatedArray(array, 7);
 
         }
 
-        static void printArray(int[] arrayName)
+        static void printArray(int [] array)
         {
-            string ExampleFunction(int[] arrayName)
-            {
-                //Construct your log statement using c# 6.0 string interpolation
-                return $"Error occurred in {arrayName}";
-            }
-            var convert
-            string whatIsNameOfArray = ExampleFunction(nameof(arrayName));
-            Console.WriteLine(whatIsNameOfArray);
-            Console.WriteLine("[{0}]", string.Join(", ", arrayName));
+            var countArray = array.Count();
+            var sumArray = array.Sum();
+            var meanArray = sumArray / countArray;
+            Console.Write(" Array Count is: " + countArray);
+            Console.Write(" Array Sum is: " + sumArray);
+            Console.Write(" Array Mean is: " + meanArray);
+            Console.WriteLine();
         }
-        
+
+        static void printReverseArray(int [] temp)
+        {
+            Array.Reverse(temp);
+            foreach (var i in temp)
+            {
+                Console.Write(i + " ");
+            }
+        }
+
+
+
+
+        //static void rotateArray(int[] array, int d, int n)
+        //{
+        //    for (int i = 0; i < d; i++)
+        //    {
+        //        rightRotateByTwo(array, n);
+        //    }
+           
+        //}
+
+        //static void rightRotateByTwo(int[] array, int n)
+        //{
+        //    int i, temp = array[0];
+        //    for (int i = 0; i < n +2; i++)
+        //    {
+        //        array[1] = array[i + 2];
+
+        //        array[i] = temp;
+        //    }
+        //}
+        //static void printRotatedArray(int[] array, int size)
+        //{
+        //    for (int i = 0; i < size; i++)
+        //        Console.Write(array[i] + " ");
+        //}
+
+        // Driver code 
 
     }
+    //2:15
+
+    //static void printArray(int[] arrayName)
+    //{
+    //    string ExampleFunction(int[] arrayName)
+    //    {
+    //        //Construct your log statement using c# 6.0 string interpolation
+    //        return $"Error occurred in {arrayName}";
+    //    }
+    //    var convert
+    //    string whatIsNameOfArray = ExampleFunction(nameof(arrayName));
+    //    Console.WriteLine(whatIsNameOfArray);
+    //    Console.WriteLine("[{0}]", string.Join(", ", arrayName));
+    //}
+
 
 }
+
+

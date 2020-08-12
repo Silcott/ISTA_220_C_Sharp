@@ -38,6 +38,7 @@ namespace Vehicles
             {
                 Console.WriteLine("Exception: {0}", ex.Message);
             }
+            Console.ReadLine();
         }
     }
 }

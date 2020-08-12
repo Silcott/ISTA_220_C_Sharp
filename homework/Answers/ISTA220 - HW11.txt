@@ -5,11 +5,14 @@
 Chapter 11:
 1. What is a parameter array?
 
-By using the params keyword, you can specify a method parameter that takes a variable number of arguments. The parameter type must be a single-dimensional array.
+By using the params keyword, you can specify a method parameter that takes a variable number of arguments. 
+The parameter type must be a single-dimensional array.
 
-No additional parameters are permitted after the params keyword in a method declaration, and only one params keyword is permitted in a method declaration.
+No additional parameters are permitted after the params keyword in a method declaration, 
+and only one params keyword is permitted in a method declaration.
 
-If the declared type of the params parameter is not a single-dimensional array, compiler error CS0225 occurs.
+If the declared type of the params parameter is not a single-dimensional array, 
+compiler error CS0225 occurs.
 
 When you call a method with a params parameter, you can pass in:
 
@@ -55,7 +58,8 @@ which of the arguments are provided by the caller and which are compiler-generat
 A method that uses a parameter array effectively has a completely arbitrary list of parameters,
 and none of them has a default value. Furthermore, the method can determine exactly how
 many arguments the caller provided.
-Generally, you use parameter arrays for methods that can take any number of parameters (including none), whereas you use optional parameters only where it is not convenient to force a caller to provide
+Generally, you use parameter arrays for methods that can take any number of parameters (including none),
+whereas you use optional parameters only where it is not convenient to force a caller to provide
 an argument for every parameter.
 
 
