@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz6_Firearms\\Quiz06\\Quiz06.csproj",
-      "projectName": "Quiz06",
-      "projectPath": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz6_Firearms\\Quiz06\\Quiz06.csproj",
+      "projectUniqueName": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex06_milUnit\\MilitaryUnit\\MilitaryUnit.csproj",
+      "projectName": "MilitaryUnit",
+      "projectPath": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex06_milUnit\\MilitaryUnit\\MilitaryUnit.csproj",
       "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz6_Firearms\\Quiz06\\obj\\",
+      "outputPath": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex06_milUnit\\MilitaryUnit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
