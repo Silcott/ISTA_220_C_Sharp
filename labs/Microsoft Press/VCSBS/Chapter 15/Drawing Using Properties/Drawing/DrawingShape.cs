@@ -14,29 +14,51 @@ namespace Drawing
     abstract class DrawingShape
     {
         protected int _size;
-        protected int _x = 0, _y = 0;
+        protected int _x = 0;
+        protected int _y = 0;
         protected Shape shape = null;
+
+        public int X
+        {
+            get => _x;
+            set => _x = value;
+        }
+        public int Y
+        {
+            get => _y;
+            set => _y = value;
+        }
 
         public DrawingShape(int size)
         {
             this._size = size;
         }
 
-        public void SetLocation(int xCoord, int yCoord)
-        {
-            this._x = xCoord;
-            this._y = yCoord;
-        }
+        //public void SetLocation(int xCoord, int yCoord)
+        //{
+        //    this._x = xCoord;
+        //    this._y = yCoord;
+        //}
 
-        public void SetColor(Color color)
+        //public void SetColor(Color color)
+        //{
+        //    if(this.shape!=null)
+        //    {
+        //        SolidColorBrush brush = new SolidColorBrush(color);
+        //        this.shape.Fill = brush;
+        //    }
+        //}
+        public Color Color
         {
-            if(this.shape!=null)
+            set
             {
-                SolidColorBrush brush = new SolidColorBrush(color);
-                this.shape.Fill = brush;
+                if (this.shape != null)
+                {
+                    SolidColorBrush brush = new SolidColorBrush(value);
+                    this.shape.Fill = brush;
+                }
             }
         }
-
         public virtual void Draw(Canvas canvas)
         {
             if(this.shape == null)

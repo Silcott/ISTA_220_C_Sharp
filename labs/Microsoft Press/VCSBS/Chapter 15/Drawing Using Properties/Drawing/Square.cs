@@ -16,6 +16,7 @@ namespace Drawing
         {            
         }
 
+     
         public override void Draw(Canvas canvas)
         {
             if(this.shape!=null)
@@ -29,5 +30,9 @@ namespace Drawing
 
             base.Draw(canvas);
         }
+
+
+
+
     }
 }
