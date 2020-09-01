@@ -6,15 +6,17 @@ namespace Quiz1
     {
         static void Main(string[] args)
         {
-            int i = 50;
+
+            Console.WriteLine("Choose a number to count down from");
+            int numberChosen = Convert.ToInt32(Console.ReadLine());
+
+            int i = numberChosen;
             while (i > 0 )
             {
                 Console.WriteLine(i);
                 i--;
             }
 
-            Console.WriteLine(i);
-            i = i--;
 
         }
     }

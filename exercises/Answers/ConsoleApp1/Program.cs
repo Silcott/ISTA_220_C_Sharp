@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace InterviewQuestionPart4
+namespace FactorialCalculator
 {
-    class SubWithoutParameters
+    class Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please Enter a Number");
+            Console.WriteLine("Please Enter a Number:");
 
             //read number from user    
             int number = Convert.ToInt32(Console.ReadLine());
@@ -15,7 +15,7 @@ namespace InterviewQuestionPart4
             double factorial = Factorial(number);
 
             //print the factorial result    
-            Console.WriteLine("factorial of" + number + "=" + factorial.ToString());
+            Console.WriteLine("factorial of " + number + " = " + factorial.ToString());
 
         }
         public static double Factorial(int number)
@@ -26,6 +26,5 @@ namespace InterviewQuestionPart4
 
         }
 
-        SubWithoutParameters();
     }
 }

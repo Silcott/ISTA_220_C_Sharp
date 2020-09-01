@@ -15,3 +15,16 @@ C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\bin
 C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.dll
 C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.pdb
 C:\Users\silco\quantico06\ISTA220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.genruntimeconfig.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.exe
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.deps.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.runtimeconfig.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.runtimeconfig.dev.json
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.dll
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\bin\Debug\netcoreapp3.1\ISTA220Exercise02.pdb
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfoInputs.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.AssemblyInfo.cs
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.dll
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.pdb
+C:\Github\repo\ISTA_220_CSharp\exercises\Answers\ISTA220Exercise02\obj\Debug\netcoreapp3.1\ISTA220Exercise02.genruntimeconfig.cache

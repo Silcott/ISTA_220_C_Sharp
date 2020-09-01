@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\quizzes\\Answers\\Quiz1\\Quiz1.csproj",
+      "projectUniqueName": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz1\\Quiz1.csproj",
       "projectName": "Quiz1",
-      "projectPath": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\quizzes\\Answers\\Quiz1\\Quiz1.csproj",
+      "projectPath": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz1\\Quiz1.csproj",
       "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\quizzes\\Answers\\Quiz1\\obj\\",
+      "outputPath": "C:\\Github\\repo\\ISTA_220_CSharp\\quizzes\\Answers\\Quiz1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

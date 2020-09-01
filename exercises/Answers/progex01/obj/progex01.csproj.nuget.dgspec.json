@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\exercises\\progex01\\progex01.csproj": {}
+    "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex01\\progex01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\exercises\\progex01\\progex01.csproj": {
+    "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex01\\progex01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\exercises\\progex01\\progex01.csproj",
+        "projectUniqueName": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex01\\progex01.csproj",
         "projectName": "progex01",
-        "projectPath": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\exercises\\progex01\\progex01.csproj",
+        "projectPath": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex01\\progex01.csproj",
         "packagesPath": "C:\\Users\\silco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silco\\quantico06\\ISTA220_CSharp\\exercises\\progex01\\obj\\",
+        "outputPath": "C:\\Github\\repo\\ISTA_220_CSharp\\exercises\\Answers\\progex01\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -56,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
