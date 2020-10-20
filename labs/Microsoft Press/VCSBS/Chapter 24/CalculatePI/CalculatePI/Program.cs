@@ -30,8 +30,23 @@ namespace CalculatePI
 
             try
             {
-                // TO DO: Implement the geometric approximation of PI
-                return 0;
+                for (int points = 0; points < NUMPOINTS; points++)
+                {
+                    int xCoord = random.Next(RADIUS);
+                    int yCoord = random.Next(RADIUS);
+                    double distanceFromOrigin = Math.Sqrt(xCoord * xCoord + yCoord * yCoord);
+                    pointsList.Add(distanceFromOrigin);
+                    doAdditionalProcessing();
+                }
+                foreach (double datum in pointsList)
+                {
+                    if (datum <= RADIUS)
+                    {
+                        numPointsInCircle++;
+                    }
+                }
+                double pi = 4.0 * numPointsInCircle / NUMPOINTS;
+                return pi;
             }
             finally
             {

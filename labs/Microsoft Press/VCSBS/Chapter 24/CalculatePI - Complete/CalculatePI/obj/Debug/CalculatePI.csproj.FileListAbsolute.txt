@@ -1,0 +1,7 @@
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\bin\Debug\CalculatePI.exe.config
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\bin\Debug\CalculatePI.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\bin\Debug\CalculatePI.pdb
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\obj\Debug\CalculatePI.csprojAssemblyReference.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\obj\Debug\CalculatePI.csproj.CoreCompileInputs.cache
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\obj\Debug\CalculatePI.exe
+C:\Github\repo\ISTA_220_CSharp\labs\Microsoft Press\VCSBS\Chapter 24\CalculatePI - Complete\CalculatePI\obj\Debug\CalculatePI.pdb

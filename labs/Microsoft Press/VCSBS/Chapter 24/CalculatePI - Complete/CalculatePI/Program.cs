@@ -116,8 +116,8 @@ namespace CalculatePI
 
             Console.WriteLine();
 
-            pi = ParallelPI();
-            Console.WriteLine("Geometric approximation of PI calculated in parallel: {0}", pi);
+            //pi = ParallelPI();
+            //Console.WriteLine("Geometric approximation of PI calculated in parallel: {0}", pi);
         }
     }
 }
